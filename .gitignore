@@ -1,0 +1,12 @@
+# Clasp credentials & configuration
+.clasp.json
+.clasprc.json
+
+# Dependencies
+node_modules/
+package-lock.json
+
+# Logs & temp
+*.log
+.system_generated/
+scratch/
