@@ -1,0 +1,26 @@
+{
+  "name": "follow-through",
+  "version": "1.0.0",
+  "description": "FollowThrough: Autonomous Meeting-to-Completion Accountability Engine on Google Workspace & Gemini Flash",
+  "main": "Code.gs",
+  "scripts": {
+    "login": "clasp login",
+    "create": "clasp create --title \"FollowThrough\" --type standalone",
+    "push": "clasp push",
+    "pull": "clasp pull",
+    "open": "clasp open"
+  },
+  "keywords": [
+    "google-workspace",
+    "apps-script",
+    "gemini",
+    "gemini-flash",
+    "automation",
+    "looker-studio"
+  ],
+  "author": "Advait Mankar",
+  "license": "MIT",
+  "devDependencies": {
+    "@google/clasp": "^3.4.1"
+  }
+}
