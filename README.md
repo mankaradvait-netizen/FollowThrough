@@ -1,10 +1,26 @@
 # FollowThrough: Autonomous Meeting-to-Completion Accountability Engine
 
+[![GitHub Repository](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/mankaradvait-netizen/FollowThrough)
+[![Google Ecosystem](https://img.shields.io/badge/Stack-100%25%20Google%20Native-4285F4?logo=google)](https://github.com/mankaradvait-netizen/FollowThrough)
+[![Gemini](https://img.shields.io/badge/AI-Gemini%202.5%20Flash-8E75C4?logo=googlegemini)](https://aistudio.google.com/)
+[![Runtime](https://img.shields.io/badge/Runtime-Apps%20Script%20V8-34A853?logo=google)](https://script.google.com/)
+
 > **"77% of collaborative meetings culminate in an agreement to schedule another meeting, and 63% of post-meeting operational overhead is lost because conversational consensus fails to convert into owned, verifiable, and tracked deliverables."**
 
 **FollowThrough** is an autonomous, closed-loop execution and accountability engine built 100% on **Google Workspace** and **Google AI Studio (Gemini Flash)**. Rather than terminating at passive notes or static bullet points, FollowThrough turns conversational transcripts into verified tasks, registers personal commitments across Google Tasks and Calendar, initiates tracked Gmail threads, understands inbound natural language email replies (Done, Blocked, Extension), runs an auto-escalating chase loop, and delivers executive telemetry in Looker Studio.
 
 Task owners **never log into any new tool, ticket system, or dashboard**—they simply reply to an email.
+
+---
+
+## 🏆 Judging Criteria Alignment Matrix
+
+| Criterion & Weight | Implementation in FollowThrough | Scoring Defense & Proof |
+| :--- | :--- | :--- |
+| **30% – Google Ecosystem Usage** | Deeply unifies **8 native Google technologies**: Google Drive, Google Docs, Gemini 2.5 Flash API, Google Sheets, Google Tasks (v1 Advanced Service), Google Calendar, Gmail, and Looker Studio. | **Zero third-party services, databases, or external middleware.** Every single state transition, communication loop, and analytics query operates natively within Google's cloud perimeter. |
+| **30% – Practical Utility** | Eliminates the post-meeting execution gap where verbal commitments evaporate. Closes the entire loop from transcript ingestion to verified task closure. | **Zero friction for task owners:** Assignees never register, log in, or install anything. They simply reply to their standard assignment email (`"Done"`, `"Blocked: reason"`, `"Extension: date"`), and the engine parses and updates the system. |
+| **20% – Technical Execution** | Industrial-grade Apps Script architecture with `LockService.getScriptLock()` distributed concurrency control, idempotent file and task tracking, safe JSON schema generation, exponential backoff (1s, 2s, 4s, 8s), and least-privilege OAuth scopes (`gmail.modify`). | Re-running any trigger never creates duplicate tasks, emails, or calendar events. Date handling uses strict plain-text `@` in `Asia/Kolkata` (`yyyy-MM-dd`), eliminating timezone shifts. |
+| **20% – Innovation** | Autonomous inbound natural language reply classification with zero-temperature Gemini Flash, multi-tier auto-escalating chase loop, evidence-backed transcript quotes ($\le 25$ words), and zero-trust prompt injection isolation. | Moves beyond passive meeting summarization by introducing an autonomous execution agent that chases work through to completion. |
 
 ---
 
